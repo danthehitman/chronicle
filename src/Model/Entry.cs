@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Arkdj.Chronicle.Model
 {
-    public class Page
+    public class Entry: Resource
     {
         public string Title { get; set; }
-        public string Description { get; set; }
-        public User Author { get; set; }
-        public IList<Entry> Entries { get; set; }
+        public string Text { get; set; }
+        public IList<Comment> Comments { get; set; }
+        public EntryCategory Category { get; set; }
     }
 }

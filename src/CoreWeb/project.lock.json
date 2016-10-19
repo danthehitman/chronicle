@@ -3644,6 +3644,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netcoreapp1.0/Model.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/Model.dll": {}
+        }
       }
     }
   },
@@ -9677,6 +9690,11 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/project.json",
+      "msbuildProject": "../Model/Model.xproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9693,6 +9711,7 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 1.0.0",
       "Microsoft.NETCore.App >= 1.0.0",
+      "Model >= 1.0.0-*",
       "Newtonsoft.Json >= 9.0.1"
     ],
     ".NETCoreApp,Version=v1.0": []

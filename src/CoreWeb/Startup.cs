@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Baseline;
 using Marten;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,11 +33,13 @@ namespace Arkdj.Chronicle.Web
             services.AddMvc();
 
             var pgHost = Environment.GetEnvironmentVariable("CHRONICLE_PGHOST");
+            if (pgHost.IsEmpty())
+                pgHost = "localhost";
             Console.WriteLine($"Connecting to PGHOST: {pgHost}.");
             services.AddSingleton<IDocumentStore>(provider =>
                 DocumentStore.For(_ =>
                 {
-                    _.Connection($"Server={pgHost};Port=5432;Database=svsim;User Id=chron;Password=chron;");
+                    _.Connection($"Server={pgHost};Port=5432;Database=chron;User Id=chron;Password=chron;");
                     _.DatabaseSchemaName = "chron";
                 }));
         }

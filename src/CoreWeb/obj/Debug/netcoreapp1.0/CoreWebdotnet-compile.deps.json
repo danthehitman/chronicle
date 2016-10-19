@@ -28,7 +28,8 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "Newtonsoft.Json": "9.0.1",
-          "Marten": "1.1.0"
+          "Marten": "1.1.0",
+          "Model": "1.0.0"
         },
         "compile": {
           "CoreWeb.dll": {}
@@ -2676,6 +2677,14 @@
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath": "4.0.1"
         }
+      },
+      "Model/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "Model.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v1.0/": {
@@ -2693,7 +2702,8 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "Newtonsoft.Json": "9.0.1",
-          "Marten": "1.1.0"
+          "Marten": "1.1.0",
+          "Model": "1.0.0"
         },
         "runtime": {
           "CoreWeb.dll": {}
@@ -5230,6 +5240,14 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Model/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "Model.dll": {}
+        }
       }
     }
   },
@@ -6203,6 +6221,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q=="
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

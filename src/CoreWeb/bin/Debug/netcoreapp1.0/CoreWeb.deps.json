@@ -28,7 +28,8 @@
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
           "Newtonsoft.Json": "9.0.1",
-          "Marten": "1.1.0"
+          "Marten": "1.1.0",
+          "Model": "1.0.0"
         },
         "runtime": {
           "CoreWeb.dll": {}
@@ -1431,6 +1432,17 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "runtime": {
+          "Model.dll": {}
+        },
+        "compile": {
+          "Model.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3478,6 +3490,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-FrazwwqfIXTfq23mfv4zH+BjqkSFNaNFBtjzu3I9NRmG8EELYyrv/fJnttCIwRMFRR/YKXF1hmsMmMEnl55HGw=="
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Libuv/1.9.0": {
       "type": "package",

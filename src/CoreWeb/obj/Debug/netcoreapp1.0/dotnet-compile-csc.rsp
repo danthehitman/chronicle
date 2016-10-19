@@ -171,7 +171,8 @@
 -r:"C:\Users\frankda\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\frankda\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"C:\Users\frankda\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll"
+-r:"C:\Dan\Dev\Chronicle\src\Model\bin\Debug\netcoreapp1.0\Model.dll"
 -resource:"C:\Dan\Dev\Chronicle\src\CoreWeb\obj\Debug\netcoreapp1.0\CoreWebdotnet-compile.deps.json",CoreWeb.deps.json
 "C:\Dan\Dev\Chronicle\src\CoreWeb\Program.cs"
 "C:\Dan\Dev\Chronicle\src\CoreWeb\Startup.cs"
-"C:\Dan\Dev\Chronicle\src\CoreWeb\Controllers\ValuesController.cs"
+"C:\Dan\Dev\Chronicle\src\CoreWeb\Controllers\BooksController.cs"

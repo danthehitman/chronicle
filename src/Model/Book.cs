@@ -1,12 +1,13 @@
-﻿using System;
+﻿
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Arkdj.Chronicle.Model
 {
-    public class Book
+    public class Book : Resource
     {
-
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public IList<Page> Pages { get; set; }
     }
 }
