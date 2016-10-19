@@ -15,7 +15,8 @@
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
     "Newtonsoft.Json": "9.0.1",
-    "Marten": "1.1.0"
+    "Marten": "1.1.0",
+    "Model": "1.0.0-*"
   },
 
   "tools": {
